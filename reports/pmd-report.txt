@@ -1,0 +1,6 @@
+src/main/java/springboot/namabus/controller/BusController.java:43:	ShortVariable:	ShortVariable: Avoid variables with short names like id
+src/main/java/springboot/namabus/entities/Bus.java:33:	ShortVariable:	ShortVariable: Avoid variables with short names like id
+src/main/java/springboot/namabus/entities/Bus.java:59:	ShortVariable:	ShortVariable: Avoid variables with short names like id
+src/main/java/springboot/namabus/entities/Bus.java:92:	ShortVariable:	ShortVariable: Avoid variables with short names like id
+src/main/java/springboot/namabus/exception/GlobalExceptionHandler.java:17:	ShortVariable:	ShortVariable: Avoid variables with short names like ex
+src/main/java/springboot/namabus/namabus.java:33:	SystemPrintln:	SystemPrintln: Usage of System.out/err

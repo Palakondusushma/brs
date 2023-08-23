@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>3.1.2</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>springboot </groupId>
+	<artifactId>namabus</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>namabus</name>
+	<description>Demo project for Spring Boot</description>
+	<properties>
+		<java.version>17</java.version>
+	</properties>
+	<dependencies>
+		<dependency>
+    <groupId>org.springdoc</groupId>
+    <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+    <version>2.1.0</version>
+</dependency>
+ 
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+<dependency>
+
+            <groupId>org.springframework.boot</groupId>
+
+            <artifactId>spring-boot-starter-web</artifactId>
+
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+<dependency>
+
+<groupId>com.mysql</groupId>
+
+<artifactId>mysql-connector-j</artifactId>
+
+</dependency>
+
+  <!-- Swagger dependencies -->
+   
+        <dependency>
+
+            <groupId>org.springframework.boot</groupId>
+
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+
+        </dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		  <dependency>
+        <groupId>javax.servlet</groupId>
+        <artifactId>javax.servlet-api</artifactId>
+        <version>4.0.1</version> <!-- Use an appropriate version -->
+    </dependency>
+    
+    <!-- Swagger dependencies -->
+  
+    <!-- Other dependencies -->
+
+    <!-- Swagger dependencies -->
+    <dependency>
+        <groupId>io.springfox</groupId>
+        <artifactId>springfox-boot-starter</artifactId>
+        <version>3.0.0</version> <!-- Use the latest version available -->
+    </dependency>
+     <dependency>
+        <groupId>io.springfox</groupId>
+        <artifactId>springfox-swagger-ui</artifactId>
+        <version>3.0.0</version> <!-- Use the latest version available -->
+    </dependency>
+       <dependency>
+        <groupId>io.springfox</groupId>
+        <artifactId>springfox-swagger2</artifactId>
+        <version>3.0.0</version> <!-- Use the latest version available -->
+    </dependency>
+
+
+    
+    <dependency>
+		<groupId>org.projectlombok</groupId>
+		<artifactId>lombok</artifactId>
+		<version>1.18.28</version>
+		<scope>provided</scope>
+	</dependency>
+	  <dependency>
+        <groupId>org.apache.logging.log4j</groupId>
+        <artifactId>log4j-core</artifactId>
+        <version>2.14.1</version> <!-- Use the latest version -->
+    </dependency>
+    <dependency>
+
+            <groupId>org.springframework.boot</groupId>
+
+            <artifactId>spring-boot-starter-security</artifactId>
+
+        </dependency>
+
+ 
+
+        <dependency>
+
+            <groupId>io.jsonwebtoken</groupId>
+
+            <artifactId>jjwt-api</artifactId>
+
+            <version>0.11.5</version>
+
+        </dependency>
+
+ 
+
+ 
+
+        <dependency>
+
+            <groupId>io.jsonwebtoken</groupId>
+
+            <artifactId>jjwt-impl</artifactId>
+
+            <version>0.11.5</version>
+
+            <scope>runtime</scope>
+
+        </dependency>
+
+ 
+
+        <dependency>
+
+            <groupId>io.jsonwebtoken</groupId>
+
+            <artifactId>jjwt-jackson</artifactId>
+
+            <version>0.11.5</version>
+
+            <scope>runtime</scope>
+
+        </dependency>
+	</dependencies>
+
+
+
+	<build>
+    <plugins>
+        <!-- Other plugins -->
+        <plugin>
+
+<groupId>org.sonarsource.scanner.maven</groupId>
+
+<artifactId>sonar-maven-plugin</artifactId>
+
+<version>3.9.1.2184</version>
+
+</plugin>
+
+<plugin>
+
+<groupId>org.jacoco</groupId>
+
+<artifactId>jacoco-maven-plugin</artifactId>
+
+<version>0.8.5</version>
+
+</plugin>
+
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-pmd-plugin</artifactId>
+            <version>3.15.0</version> <!-- Use the latest version -->
+            <executions>
+                <execution>
+                    <id>pmd</id>
+                    <phase>verify</phase> <!-- Or another appropriate phase -->
+                    <goals>
+                        <goal>pmd</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
+    </plugins>
+</build>
+
+</project>
